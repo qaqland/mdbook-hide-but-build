@@ -1,0 +1,15 @@
+[book]
+authors = ["qaqland"]
+language = "en"
+multilingual = false
+src = "src"
+title = "mdbook-hide-but-build"
+
+[output.html]
+git-repository-url = "https://github.com/qaqland/mdbook-hide-but-build"
+
+
+[preprocessor.hide-but-build]
+renderers = ["html"]
+command = "python hide-but-build.py"
+before = [ "index" ]
